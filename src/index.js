@@ -10,7 +10,7 @@ let store = createStore(control);
 
 ReactDOM.render(
     <Provider store={store}>
-        <Number />
+        <Number level={5} />
     </Provider>,
     document.getElementById('content')
 );

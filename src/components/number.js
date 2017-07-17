@@ -6,8 +6,8 @@ import NumberInput from 'components/number-input';
 const mapStateToProps = state => ({ value: state.value });
 
 const mapDispatchToProps = (dispatch, props) => ({
-    onIncrease: () => dispatch(increase(1)),
-    onDecrease: () => dispatch(decrease(1))
+    onIncrease: () => dispatch(increase(props.level || 1)),
+    onDecrease: () => dispatch(decrease(props.level || 1))
 })
 
 const Number = connect(
