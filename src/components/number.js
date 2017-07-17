@@ -1,4 +1,3 @@
-
 import { connect } from 'react-redux';
 import { increase, decrease } from 'actions';
 import NumberInput from 'components/number-input';

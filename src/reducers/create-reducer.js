@@ -1,4 +1,3 @@
-
 export default function createReducer(def, initState = {}) {
     return function (state = initState, action) {
         let fn = def[action.type];

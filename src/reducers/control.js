@@ -1,4 +1,3 @@
-
 import { createReducer } from 'reducers';
 import { INCREASE, DECREASE } from 'actions';
 
