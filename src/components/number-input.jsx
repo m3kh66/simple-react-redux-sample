@@ -4,12 +4,12 @@ import propTypes from 'prop-types';
 export default class NumberInput extends React.Component {
 
     render() {
-        let { onIncrease, onDecrease, value } = this.props;
+        let { onIncrease, onDecrease, value, level } = this.props;
         return (
             <div>
                 <input readOnly={true} value={value} />
-                <button onClick={onIncrease}>Up</button>
-                <button onClick={onDecrease}>Down</button>
+                <button onClick={onIncrease}>+{level}</button>
+                <button onClick={onDecrease}>-{level}</button>
             </div>
         );
     }
