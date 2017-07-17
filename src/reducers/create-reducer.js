@@ -1,5 +1,5 @@
 
-export default function reducer(def, initState = {}) {
+export default function createReducer(def, initState = {}) {
     return function (state = initState, action) {
         let fn = def[action.type];
         if (typeof fn === 'undefined') return state;

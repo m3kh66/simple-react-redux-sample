@@ -3,10 +3,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducers from 'reducers';
+import { control } from 'reducers';
 import Number from 'components/number';
 
-let store = createStore(reducers);
+let store = createStore(control);
 
 ReactDOM.render(
     <Provider store={store}>
