@@ -2,16 +2,16 @@
 export const INCREASE = 'INCREASE';
 export const DECREASE = 'DECREASE';
 
-export function increase(value) {
+export function increase(level) {
     return {
         type: INCREASE,
-        value
+        level
     };
 }
 
-export function decrease(value) {
+export function decrease(level) {
     return {
         type: DECREASE,
-        value
+        level
     };
 }
